@@ -7,7 +7,7 @@ type BothSideProps = {
 
 const BothSideMenu = styled.div`
   background: transparent;
-  text-align: ${(props) => (props.isRight ? 'right' : 'center')};
+  text-align: ${(props: BothSideProps) => (props.isRight ? 'right' : 'center')};
   display: flex;
   align-items: ${(props) => (props.isRight ? 'center' : '')};
   justify-content: ${(props) => (props.isRight ? 'flex-end' : '')};
