@@ -8,8 +8,7 @@ type BothSideProps = {
 
 const BothSideMenu = styled.div`
   background: transparent;
-  height: ${(props: BothSideProps) => (props.isRight ? '' : '100%')};
-  text-align: ${(props) => (props.isRight ? 'right' : 'center')};
+  text-align: ${(props : BothSideProps) => (props.isRight ? 'right' : 'center')};
   display: flex;
   align-items: ${(props) => (props.isRight ? 'center' : '')};
   justify-content: ${(props) => (props.isRight ? 'flex-end' : '')};

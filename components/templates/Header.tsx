@@ -4,13 +4,10 @@ import HeaderTextSpan from '../molecules/HeaderTextSpan';
 import HeaderTextButton from '../molecules/HeaderTextButton';
 import CenterMenu from '../molecules/CenterMenu';
 import HeaderSearchButton from '../atoms/HeaderSearchButton';
-import HeaderLoginButton from '../molecules/HeaderLoginButton';
+import HeaderLoginButton from '../molecules/HeaderLoginLink';
 import HeaderSideMenu from '../organisms/HeaderSideMenu';
 
 const HeaderOuter = styled.div`
-  @media (min-width: 1080px) {
-    height: 65px;
-  }
   width: 100%;
   height: 58px;
   background-color: rgb(255, 255, 255);
@@ -18,6 +15,9 @@ const HeaderOuter = styled.div`
   align-items: center;
   position: relative;
   z-index: 999;
+  @media (min-width: 1080px) {
+    height: 65px;
+  }
 `;
 
 const HeaderMenu = styled.div`
@@ -28,14 +28,14 @@ const HeaderMenu = styled.div`
 `;
 
 const Container = styled.div`
-  @media (min-width: 1080px) {
-    width: 1080px;
-    margin: 0px auto;
-  }
   width: 100%;
   position: relative;
   margin: 0px auto;
   padding: 0px;
+  @media (min-width: 1080px) {
+    width: 1080px;
+    margin: 0px auto;
+  }
 `;
 
 function Header(props) {

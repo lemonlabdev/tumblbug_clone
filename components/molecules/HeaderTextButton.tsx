@@ -16,15 +16,19 @@ const TextButton = styled.button`
   background: transparent;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
+  line-height: 58px;
   &:hover {
     cursor: pointer;
     color: rgba(0, 0, 0, 0.7);
+  }
+  @media (min-width: 1080px) {
+    line-height: 65px;
   }
 `;
 
 function HeaderTextButton({ children }: HeaderTextButtonProps) {
   return (
-    <TextButton className="Header-line-height">
+    <TextButton>
       <FontAwesomeIcon icon={faBars} className="Bar" />
       <HeaderItemLabel>{children}</HeaderItemLabel>
     </TextButton>

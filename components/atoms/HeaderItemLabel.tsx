@@ -10,10 +10,17 @@ const Text = styled.span`
   color: inherit;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
+  line-height: 58px;
+  @media (min-width: 1080px) {
+    line-height: 65px;
+  }
+  @media (max-width: 1079px) {
+    display: none;
+  }
 `;
 
 function HeaderItemLabel({ children }: HeaderLabelProps) {
-  return <Text className="Header-line-height Header-mobile">{children}</Text>;
+  return <Text>{children}</Text>;
 }
 
 export default HeaderItemLabel;

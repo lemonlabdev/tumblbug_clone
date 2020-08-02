@@ -7,14 +7,14 @@ const LogoContainer = styled.div`
 `;
 
 const MainLogo = styled.img`
+  width: 70px;
+  height: 18.41px;
+  background: transparent;
   @media (min-width: 1080px) {
     width: 85px;
     height: 22.36px;
   }
-  width: 70px;
-  height: 18.41px;
-  background: transparent;
-`;
+  `;
 
 function TumblbugLogo() {
   return (
