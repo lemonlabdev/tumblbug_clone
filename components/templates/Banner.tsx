@@ -9,15 +9,17 @@ const MainContainer = styled.div`
 `;
 
 const BannerImage = styled.div`
-  background-image: url('images/hero_gadamhangsul.jpg');
+  background-image: url('images/banner.jpg');
   background-size: cover;
   width: 100%;
   height: 280px;
+  margin: 0px 0px 24px;
   position: relative;
   background-position: center center;
   @media (min-width: 1080px) {
     width: 100%;
     height: 400px;
+    margin: 0px 0px 40px;
   }
   @media (min-width: 1400px) {
     height: 450px;
@@ -29,8 +31,11 @@ const TitleContainter = styled.div`
   bottom: 0px;
   left: 0px;
   font-weight: bolder;
-  margin: 0 0 1rem 2rem;
+  margin-bottom: 4rem;
   padding: 2rem 1rem;
+  @media (min-width: 1080px) {
+    margin-bottom: 0.75rem;
+  }
 `;
 
 const Title = styled.h1`

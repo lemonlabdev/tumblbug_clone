@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 type ProjectFundingStatusProps = {
-  percentage?: string;
+  percentage?: number;
 };
 
 const FundingStatus = styled.div`

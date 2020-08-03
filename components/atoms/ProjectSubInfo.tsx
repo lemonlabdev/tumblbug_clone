@@ -21,14 +21,14 @@ const SubInfo = styled.dd`
 `;
 
 const CompanyText = styled.span`
-  &:before {
+  &::before {
     content: '|';
     display: inline-block;
     margin: 0px 6px;
     font-size: 7px;
   }
   @media (min-width: 1080px) {
-    &:before {
+    &::before {
       font-size: 8px;
     }
   }
