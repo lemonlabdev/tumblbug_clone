@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import Header from '../components/templates/Header';
 import Banner from '../components/organisms/Banner';
+import ProjectSubInfo from '../components/atoms/ProjectSubInfo';
 
 interface HomeProsInterface {}
 
@@ -14,8 +15,9 @@ export default function Home() {
       <Head>
         <title>텀블벅 클론코딩</title>
       </Head>
-      <Header/>
-      <Banner/>
+      <Header />
+      <Banner />
+      <ProjectSubInfo category="CPU/Ryzen" company="AMD" />
     </div>
   );
 }

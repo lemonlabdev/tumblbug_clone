@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 type HeaderLabelProps = {
   children?: ReactNode;
-  hover?: String;
+  hover?: string;
 };
 
 const Text = styled.span`

@@ -9,7 +9,7 @@ const MainContainer = styled.div`
 `;
 
 const BannerImage = styled.div`
-  background-image: url('/images/hero_gadamhangsul.jpg');
+  background-image: url('images/hero_gadamhangsul.jpg');
   background-size: cover;
   width: 100%;
   height: 280px;

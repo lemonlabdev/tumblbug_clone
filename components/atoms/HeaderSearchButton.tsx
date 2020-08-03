@@ -10,7 +10,7 @@ const SearchButton = styled.button`
   margin: 0px -0.8rem 0px 0px;
   outline: none;
   border: none;
-  &::before {
+  &:before {
     content: '';
     display: block;
     width: 20px;
@@ -24,7 +24,7 @@ const SearchButton = styled.button`
   @media (min-width: 1080px) {
     margin: 0px 0.5rem 0px 0px;
     padding: 5px;
-    &::before {
+    &:before {
       width: 24px;
       height: 24px;
       margin: 0px;
