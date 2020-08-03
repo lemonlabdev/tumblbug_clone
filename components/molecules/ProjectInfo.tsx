@@ -1,5 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProjectSubInfo from '../atoms/ProjectSubInfo';
+import ProjectTitle from '../atoms/ProjectTitle';
+
+type ProjectInfoProps = {
+  category?: string;
+  company?: string;
+  content?: string;
+};
 
 const InfoWrapper = styled.dl`
   min-height: 74px;
@@ -11,8 +19,13 @@ const InfoWrapper = styled.dl`
   }
 `;
 
-function ProjectInfo() {
-  return <InfoWrapper></InfoWrapper>;
+function ProjectInfo({ category, company, content }: ProjectInfoProps) {
+  return (
+    <InfoWrapper>
+      <ProjectSubInfo category={category} company={company} />
+      <ProjectTitle content={content} />
+    </InfoWrapper>
+  );
 }
 
 export default ProjectInfo;
