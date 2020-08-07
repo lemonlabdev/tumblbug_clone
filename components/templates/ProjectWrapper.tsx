@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import ListHeading from '../atoms/ListHeading';
 import ProjectCard from '../organisms/ProjectCard';
+import ViewMoreButton from '../atoms/ViewMoreButton';
 
 type ProjectWrapperProps = {
   heading?: string;
+  content?: string;
+  isHead?: boolean;
 };
 
 const ProjectListContainer = styled.div`
@@ -36,7 +39,7 @@ const ProjectList = styled.div`
   padding: 0px;
 `;
 
-function ProjectWrapper({ heading }: ProjectWrapperProps) {
+function ProjectWrapper({ heading, content, isHead }: ProjectWrapperProps) {
   return (
     <ProjectListContainer>
       <ProjectSectionWrapper>
@@ -102,6 +105,7 @@ function ProjectWrapper({ heading }: ProjectWrapperProps) {
           </ProjectList>
         </ProjectListWrapper>
       </ProjectSectionWrapper>
+      <ViewMoreButton content={content} isHead={isHead}></ViewMoreButton>
     </ProjectListContainer>
   );
 }
