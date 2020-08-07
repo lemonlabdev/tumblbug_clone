@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ListHeading from '../atoms/ListHeading';
+import ListHeading from '../molecules/ListHeading';
 import ProjectCard from '../organisms/ProjectCard';
 import ViewMoreButton from '../atoms/ViewMoreButton';
 
@@ -43,7 +43,7 @@ function ProjectWrapper({ heading, content, isHead }: ProjectWrapperProps) {
   return (
     <ProjectListContainer>
       <ProjectSectionWrapper>
-        <ListHeading heading={heading} />
+        <ListHeading heading={heading} isHead={isHead} />
         <ProjectListWrapper>
           <ProjectList>
             <ProjectCard

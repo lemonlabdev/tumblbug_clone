@@ -18,9 +18,9 @@ export default function Home() {
       </Head>
       <Header />
       <Banner />
-      <ProjectWrapper heading="주목할 만한 프로젝트" isHead={false} />
+      <ProjectWrapper heading="주목할 만한 프로젝트" isHead={true} />
       <ExhibitionWrapper heading="진행중인 기획전" />
-      <ProjectWrapper heading="인기 추천 프로젝트" content="인기 추천 프로젝트 더보기" isHead={true} />
+      <ProjectWrapper heading="인기 추천 프로젝트" content="인기 추천 프로젝트 더보기" isHead={false} />
     </div>
   );
 }

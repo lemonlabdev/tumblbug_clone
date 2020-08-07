@@ -8,7 +8,7 @@ type ViewMoreButtonProps = {
 
 const MoreButton = styled.a`
   height: 44px;
-  display: ${(props: ViewMoreButtonProps) => (props.isHead ? 'flex' : 'none')};
+  display: ${(props: ViewMoreButtonProps) => (props.isHead ? 'none' : 'flex')};
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(230, 230, 230);

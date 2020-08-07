@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import ArrowBraket from '../atoms/ArrowBraket';
 
 type ListHeadingProps = {
   heading?: string;
+  isHead?: boolean;
 };
 
 const Heading = styled.div`
@@ -19,8 +21,13 @@ const Heading = styled.div`
   padding: 0px 7px;
 `;
 
-function ListHeading({ heading }: ListHeadingProps) {
-  return <Heading>{heading}</Heading>;
+function ListHeading({ heading, isHead }: ListHeadingProps) {
+  return (
+    <Heading>
+      {heading}
+      <ArrowBraket isHead={isHead}/>
+    </Heading>
+  );
 }
 
 export default ListHeading;

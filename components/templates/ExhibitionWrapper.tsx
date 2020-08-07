@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ListHeading from '../atoms/ListHeading';
+import ListHeading from '../molecules/ListHeading';
 import ExhibitionCard from '../organisms/ExhibitionCard';
 
 type ProjectWrapperProps = {
