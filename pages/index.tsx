@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <Banner />
       <ProjectWrapper heading="주목할 만한 프로젝트" />
-      <ExhibitionWrapper heading="진행중인 기획전" title="수학II의 세계로"/>
+      <ExhibitionWrapper heading="진행중인 기획전" />
     </div>
   );
 }

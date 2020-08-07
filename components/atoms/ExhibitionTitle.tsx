@@ -8,23 +8,23 @@ type ExhibitionTitleProps = {
 const ExhibitionHeading = styled.span`
   color: rgb(33, 33, 33);
   font-weight: bold;
-  font-size: 1.231rem;
+  font-size: 1.23rem;
   position: relative;
   display: block;
   padding: 16px 0px 0px 16px;
-  &::after {
-    content: '';
-    width: 24px;
-    height: 2px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background: rgb(33, 33, 33);
-  }
   @media (min-width: 1080px) {
-    font-size: 1.286rem;
+    font-size: 1.28rem;
     margin: 22px 0px 0px 24px;
     padding: 0px 0px 16px;
+    &::after {
+      content: '';
+      width: 24px;
+      height: 2px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background: rgb(33, 33, 33);
+    }
   }
 `;
 

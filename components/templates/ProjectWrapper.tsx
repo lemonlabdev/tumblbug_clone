@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectHeading from '../atoms/ProjectHeading';
+import ListHeading from '../atoms/ListHeading';
 import ProjectCard from '../organisms/ProjectCard';
 
 type ProjectWrapperProps = {
@@ -40,7 +40,7 @@ function ProjectWrapper({ heading }: ProjectWrapperProps) {
   return (
     <ProjectListContainer>
       <ProjectSectionWrapper>
-        <ProjectHeading heading={heading} />
+        <ListHeading heading={heading} />
         <ProjectListWrapper>
           <ProjectList>
             <ProjectCard

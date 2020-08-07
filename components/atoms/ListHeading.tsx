@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-type ProjectHeadingProps = {
+type ListHeadingProps = {
   heading?: string;
 };
 
@@ -19,8 +19,8 @@ const Heading = styled.div`
   padding: 0px 7px;
 `;
 
-function ProjectHeading({ heading }: ProjectHeadingProps) {
+function ListHeading({ heading }: ListHeadingProps) {
   return <Heading>{heading}</Heading>;
 }
 
-export default ProjectHeading;
+export default ListHeading;
