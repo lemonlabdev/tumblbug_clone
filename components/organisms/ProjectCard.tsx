@@ -15,7 +15,7 @@ type ProjectCardProps = {
 
 const CardWrapper = styled.div`
   width: 50%;
-  padding-bottom: 0px 7px 40px 7px;
+  padding: 0px 7px 40px 7px;
   @media (min-width: 992px) {
     width: 25%;
     padding: 0px 12px 64px 12px;

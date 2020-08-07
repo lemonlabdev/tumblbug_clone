@@ -5,7 +5,7 @@ type ProjectTitleProps = {
   content?: string;
 };
 
-const TitleWrapper = styled.dt`
+const ProjectTitleWrapper = styled.dt`
   display: box;
   box-orient: vertical;
   line-clamp: 2;
@@ -29,9 +29,9 @@ const TitleLink = styled.a`
 
 function ProjectTitle({ content }: ProjectTitleProps) {
   return (
-    <TitleWrapper>
+    <ProjectTitleWrapper>
       <TitleLink>{content}</TitleLink>
-    </TitleWrapper>
+    </ProjectTitleWrapper>
   );
 }
 
