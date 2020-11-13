@@ -1,26 +1,41 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
-import styled from 'styled-components';
-import HeaderItemLabel from '../components/atoms/HeaderItemLabel';
-import HeaderTextButton from '../components/molecules/HeaderTextButton';
-import TumblbugLogo from '../components/atoms/TumblbugLogo';
+
+import Header from '../components/templates/Header';
+import Banner from '../components/templates/Banner';
+import ProjectWrapper from '../components/templates/ProjectWrapper';
+import ExhibitionWrapper from '../components/templates/ExhibitionWrapper';
+import ProjectStartBanner from '../components/templates/ProjectStartBanner';
 
 interface HomeProsInterface {}
 
-const TestImg = styled.span`
-  background-image: url('../public/images/user-account.png');
-`;
-
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>텀블벅 클론코딩</title>
       </Head>
-      <HeaderTextButton>프로젝트 둘러보기</HeaderTextButton>
-      <HeaderItemLabel>프로젝트 올리기</HeaderItemLabel>
-      <div>{/*여기다 작성하기*/}</div>
-    </div>
+      <Header />
+      <Banner />
+      <ProjectWrapper heading="주목할 만한 프로젝트" isHead={true} />
+      <ExhibitionWrapper heading="진행중인 기획전" />
+      <ProjectWrapper
+        heading="인기 추천 프로젝트"
+        content="인기 추천 프로젝트 더보기"
+        isHead={false}
+      />
+      <ProjectWrapper
+        heading="성공 임박 프로젝트"
+        content="성공 임박 프로젝트 더보기"
+        isHead={false}
+      />
+      <ProjectWrapper
+        heading="신규 추천 프로젝트"
+        content="신규 추천 프로젝트 더보기"
+        isHead={false}
+      />
+      <ProjectStartBanner />
+    </>
   );
 }
